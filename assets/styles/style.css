@@ -308,6 +308,146 @@ progress {
   color: #606060;
 }
 
+/* Halaman Detail */
+
+.section-details-header {
+  min-height: 310px;
+  background: #e4e6eb;
+  margin-top: -70px;
+}
+
+.section-details-content {
+  margin-top: -210px;
+  min-height: 100vh;
+
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .breadcrumb-item {
+    &.active {
+      font-weight: bold;
+      color: #071c4d;
+    }
+  }
+
+  .card-details {
+    padding: 30px;
+    border-radius: 11px;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #312828;
+    }
+
+    h3 {
+      font-weight: 300;
+      font-size: 14px;
+      color: #071c4d;
+    }
+
+    .trip-information {
+      th {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #071c4d;
+      }
+
+      td {
+        font-weight: 300;
+        font-size: 18px;
+        color: #312828;
+      }
+
+      .text-blue {
+        color: #071c4d;
+        font-weight: bold;
+      }
+
+      .text-orange {
+        color: #ff9e53;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .features {
+    margin-top: 20px;
+
+    h3 {
+      font-size: 18px;
+      color: #071c4d;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .description {
+      margin-left: 10px;
+      overflow: hidden;
+      float: left;
+    }
+
+    .features-image {
+      width: 45px;
+      height: 45px;
+      float: left;
+    }
+  }
+
+  .gallery {
+    .xzoom-container {
+      display: block;
+      text-align: center; /* Center the image */
+      margin-bottom: 10px;
+      overflow: hidden; /* Ensure the image stays within the container */
+    }
+
+    .xzoom {
+      max-width: 55%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+      box-shadow: none;
+      border-radius: 10px;
+    }
+
+    .xactive {
+      border: 4px solid #1abc9c;
+      box-shadow: none;
+    }
+  }
+
+  .members {
+    .member-image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .join-container {
+    margin-top: -16px;
+  }
+}
+
+.card-right {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+}
+
 #footer {
   font-family: "Poppins", sans-serif;
   padding: 30px 70px 0px;
