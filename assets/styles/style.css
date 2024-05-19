@@ -14,9 +14,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -501,16 +505,6 @@ progress {
   margin-top: 25px;
   font-size: 16px;
   line-height: 9000;
-  text-align: center;
-  color: #2a324c;
-}
-
-.footer-copyright {
-  font-weight: bold;
-  padding: 20px 0px 40px;
-  margin-top: 50px;
-  font-size: 15px;
-  font-weight: lighter;
   text-align: center;
   color: #2a324c;
 }
