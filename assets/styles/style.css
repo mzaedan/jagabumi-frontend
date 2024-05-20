@@ -14,13 +14,9 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -312,6 +308,68 @@ progress {
   color: #606060;
 }
 
+/* Halaman Project */
+
+#project-list {
+  color: #2b344f;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 300px 80px 300px;
+}
+
+.project-logo img {
+  width: 400px;
+  height: 400px;
+}
+
+.project-list {
+  width: 50%;
+}
+
+.project-list a {
+  text-decoration: none;
+  color: #2b344f;
+}
+
+.project-list a h1:hover {
+  color: #5bbe82;
+  transition: all ease 0.5s;
+}
+
+.project-list h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #2b344f;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.project-list p {
+  font-size: 18px;
+  font-weight: 105;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+a.tbl-hijau {
+  display: inline-block;
+  background: #5bbe82;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 15px 20px 15px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+a.tbl-hijau:hover {
+  background: #3f72af;
+  text-decoration: none;
+}
+
 /* Halaman Detail */
 
 .section-details-header {
@@ -505,6 +563,16 @@ progress {
   margin-top: 25px;
   font-size: 16px;
   line-height: 9000;
+  text-align: center;
+  color: #2a324c;
+}
+
+.footer-copyright {
+  font-weight: bold;
+  padding: 20px 0px 40px;
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: lighter;
   text-align: center;
   color: #2a324c;
 }
