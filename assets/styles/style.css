@@ -530,16 +530,6 @@ a.tbl-hijau:hover {
         font-size: 18px;
         color: #312828;
       }
-
-      .text-blue {
-        color: #071c4d;
-        font-weight: bold;
-      }
-
-      .text-orange {
-        color: #ff9e53;
-        font-weight: bold;
-      }
     }
   }
 
@@ -598,7 +588,19 @@ a.tbl-hijau:hover {
   }
 
   .join-container {
-    margin-top: -16px;
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .btn-join-now {
+    background-color: #5bbe82;
+    color: #fff;
+    border-radius: 0;
+
+    &:hover {
+      background-color: #85d5a5;
+      color: #fff;
+    }
   }
 }
 
