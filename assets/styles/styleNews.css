@@ -155,9 +155,10 @@
 }
 
 .about p {
-    font-size: 22px;
-    font-weight: 105;
+    font-size: 20px;
+    font-weight: 145;
     text-align: justify;
+    color: black;
 }
 
   
