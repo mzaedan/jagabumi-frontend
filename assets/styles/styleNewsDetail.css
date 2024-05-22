@@ -49,8 +49,9 @@
     height: auto;
   }
 
-  nav .header-logo h1{
-    color: #ffffff;
+  .title-page h1{
+    padding: 50px 0 80px 300px;
+    color: #2b344f;
     font-size: 3rem;
     font-weight: bold;
     margin-top: 20px;
@@ -143,12 +144,12 @@
 }
 
 .testimonial-quote {
-    font-size: 1rem;
+    font-size: 22px;
     color: #555555;
     text-align: justify;
 }
 
-.card {
+/* .card {
     width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
@@ -192,12 +193,12 @@
 
 .btn-primary:hover {
     background-color: #4aae75;
-}
+} */
 
 
 
 /* about News */
-#about {
+/* #about {
     color: #2b344f;
     background-color: #ffffff;
     display: flex;
@@ -245,7 +246,7 @@
     font-size: 18px;
     font-weight: 105;
     text-align: justify;
-}
+} */
 
   #footer {
     font-family: "Poppins", sans-serif;
@@ -530,8 +531,9 @@
   
 /* Responsive Styles News */
 @media screen and (max-width: 768px) {
-    nav .header-logo h1 {
-        display: none;
+    .title-page h1 {
+      padding: 50px 0 0 50px;
+      font-size: 2rem;
     }
 
     #about {
