@@ -20,7 +20,7 @@
   
   body {
     background-color: #ffffff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   
   header {
@@ -29,11 +29,10 @@
   }
   
   header > nav {
-    /* position: sticky; */
+    position: sticky;
     top: 0;
-    padding: 10px 15%;
+    padding: 10px 70px;
     display: flex;
-    justify-content: space-evenly;
     width: 100%;
     align-items: center;
     z-index: 1;
@@ -43,18 +42,10 @@
   .header-logo {
     flex-grow: 1;
   }
-
-  nav .header-logo img {
-    width: 80px;
+  
+  .header-logo img {
+    width: 100px;
     height: auto;
-  }
-
-  nav .header-logo h1{
-    color: #ffffff;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 25px;
   }
   
   nav > .nav-header {
@@ -77,10 +68,10 @@
   .nav-header .nav-item a {
     background-color: #5bbe82;
     color: black;
-    font-size: 1.1rem;
+    font-size: 20px;
+    font-weight: 600;
     text-decoration: none;
     padding-bottom: 5px;
-    text-transform: lowercase;
   }
   
   .active > a,
@@ -137,204 +128,121 @@
 }
 
 .testimonial-name {
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 10px;
+}
+
+.testimonial-loc {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 .testimonial-quote {
-    font-size: 1rem;
+    font-size: 22px;
     color: #555555;
     text-align: justify;
 }
 
-.card {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* footer */
+#footer {
+  font-family: "Poppins", sans-serif;
+  padding: 30px 70px 0px;
+  background-color: #5bbe82;
 }
 
-.card-header {
-    background-color: #5bbe82;
-    color: #ffffff;
-    padding: 10px;
-    font-weight: bold;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.footer-content {
+  display: flex;
 }
 
-.card-body {
-    padding: 20px;
+.footer-logo,
+.footer-kontak,
+.footer-menu {
+  font-weight: bold;
+  flex: 1;
 }
 
-.card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+.footer-menu {
+  padding-left: 150px;
 }
 
-.card-text {
-    font-size: 1rem;
-    color: #555555;
-    margin-bottom: 20px;
+.footer-menu h4,
+.footer-kontak h4 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.btn-primary {
-    background-color: #5bbe82;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+.footer-kontak p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2a324c;
 }
 
-.btn-primary:hover {
-    background-color: #4aae75;
+.footer-menu li {
+  font-weight: bold;
+  list-style: none;
+  margin: 0px 0px 20px;
 }
 
-
-
-/* about News */
-#about {
-    color: #2b344f;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.footer-menu li > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #2a324c;
 }
 
-.about-media img {
-    width: 100%;
-    height: auto;
+.footer-logo > p {
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #2a324c;
 }
 
-.about {
-    width: 50%;
-    padding: 0 60px 0 60px;
+.footer-copyright {
+  font-weight: bold;
+  padding: 20px 0px 40px;
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  color: #2a324c;
 }
 
-.about a {
-    text-decoration: none;
-    color: #2b344f;
+.social-media {
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  background-size: cover;
 }
 
-.about a h1:hover {
-    color: #5bbe82;
-    transition: all ease 0.5s;
+.social-media-group {
+  margin-top: 20px;
 }
 
-.about h1 {
-    font-size: 2rem;
-    font-weight: normal;
-    color: #2b344f;
-    margin-bottom: 0px;
-    font-weight: bold;
+.social-media-group a {
+  display: inline-block;
+  margin-right: 25px;
+  text-decoration: none;
+  height: 40px;
+  width: 40px;
 }
 
-.about h2 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: bold;
+.instagram {
+  background-image: url("../image/instagram.svg");
 }
 
-.about p {
-    font-size: 18px;
-    font-weight: 105;
-    text-align: justify;
+.facebook {
+  background-image: url("../image/facebook.svg");
 }
 
-  #footer {
-    font-family: "Poppins", sans-serif;
-    background-color: #5bbe82;
-    height: 70vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: start;
-    padding: 50px 300px 50px 300px;
-  }
-
-  .footer-logo {
-    width: 70%;
-    margin-top: 50px;
-  }
-
-  .footer-logo img{
-    width: 200px;
-    height: auto;
-  }
-
-  .footer-contact {
-    padding-top: 50px;
-    padding-left: 0;
-  }
-
-  .footer-contact h4 {
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .footer-contact p {
-    color: #2b344f;
-    font-size: 1rem;
-  }
-
-  .footer-menu {
-    padding-top: 50px;
-    padding-left: 150px;
-  }
-
-  .footer-menu h4 {
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-
-  .footer-menu li {
-    list-style: none;
-  }
-
-  .footer-menu li > a {
-    text-decoration: none;
-    color: #2b344f;
-  }
-
-
-  
-  .social-media {
-    font-weight: bold;
-    height: 40px;
-    width: 40px;
-    background-size: cover;
-  }
-  
-  .social-media-group {
-    margin-top: 20px;
-  }
-  
-  .social-media-group a {
-    display: inline-block;
-    margin-right: 25px;
-    text-decoration: none;
-    height: 40px;
-    width: 40px;
-  }
-  
-  .instagram {
-    background-image: url("../image/instagram.svg");
-  }
-  
-  .facebook {
-    background-image: url("../image/facebook.svg");
-  }
-  
-  .twitter {
-    background-image: url("../image/twitter.svg");
-  }
+.twitter {
+  background-image: url("../image/twitter.svg");
+}
   
   @media (max-width: 1100px) {
     .nav-header {
@@ -530,8 +438,9 @@
   
 /* Responsive Styles News */
 @media screen and (max-width: 768px) {
-    nav .header-logo h1 {
-        display: none;
+    .title-page h1 {
+      padding: 50px 0 0 50px;
+      font-size: 2rem;
     }
 
     #about {
