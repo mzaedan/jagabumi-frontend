@@ -39,6 +39,11 @@ header > nav {
   flex-grow: 1;
 }
 
+.header-logo img {
+  width: 100px;
+  height: auto;
+}
+
 nav > .nav-header {
   flex-grow: 3;
   display: inline-block;
@@ -60,7 +65,7 @@ nav > .nav-header {
   background-color: #5bbe82;
   color: black;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   padding-bottom: 5px;
 }

@@ -20,7 +20,7 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -29,11 +29,10 @@ header {
 }
 
 header > nav {
-  /* position: sticky; */
+  position: sticky;
   top: 0;
-  padding: 10px 15%;
+  padding: 10px 70px;
   display: flex;
-  justify-content: space-evenly;
   width: 100%;
   align-items: center;
   z-index: 1;
@@ -44,8 +43,8 @@ header > nav {
   flex-grow: 1;
 }
 
-nav .header-logo img {
-  width: 80px;
+.header-logo img {
+  width: 100px;
   height: auto;
 }
 
@@ -69,10 +68,10 @@ nav > .nav-header {
 .nav-header .nav-item a {
   background-color: #5bbe82;
   color: black;
-  font-size: 1.1rem;
+  font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
   padding-bottom: 5px;
-  text-transform: lowercase;
 }
 
 .active > a,
@@ -100,8 +99,17 @@ hr {
   text-align: center;
 }
 
+#berita {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
 .title-page h1 {
-  padding: 50px 0 80px 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0 50px 0%;
   color: #2b344f;
   font-size: 3rem;
   font-weight: bold;
@@ -109,252 +117,139 @@ hr {
   margin-bottom: 25px;
 }
 
-/* about News */
-#about {
-  color: #2b344f;
-  background-color: #ffffff;
+/* card */
+.card-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 300px 80px 300px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.about-media img {
-  width: 400px;
-  height: 400px;
+.card {
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #5bbe82;
 }
 
-.about {
-  width: 50%;
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.about a {
-  text-decoration: none;
-  color: #2b344f;
+.card-content {
+  padding: 20px;
 }
 
-.about a h1:hover {
-  color: #5bbe82;
-  transition: all ease 0.5s;
-}
-
-.about h1 {
-  font-size: 2rem;
-  font-weight: normal;
-  color: #2b344f;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.about h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.about p {
-  font-size: 20px;
-  font-weight: 370;
-  text-align: justify;
-  color: black;
-}
-
-/* Halaman Detail */
-
-.section-details-header {
-  min-height: 310px;
-  background: #e4e6eb;
-  margin-top: -70px;
-}
-
-.section-details-content {
-  margin-top: -210px;
-  min-height: 100vh;
-
-  .breadcrumb {
-    background-color: transparent;
-    padding: 0;
-    margin-bottom: 30px;
-  }
-
-  .breadcrumb-item {
-    &.active {
-      font-weight: bold;
-      color: #071c4d;
-    }
-  }
-
-  .card-details {
-    padding: 30px;
-    border-radius: 11px;
-
-    h1 {
-      font-size: 26px;
-    }
-
-    h2 {
-      font-size: 20px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #312828;
-    }
-
-    h3 {
-      font-weight: 300;
-      font-size: 14px;
-      color: #071c4d;
-    }
-
-    .trip-information {
-      th {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-weight: 400;
-        font-size: 18px;
-        color: #071c4d;
-      }
-
-      td {
-        font-weight: 300;
-        font-size: 18px;
-        color: #312828;
-      }
-
-      .text-blue {
-        color: #071c4d;
-        font-weight: bold;
-      }
-
-      .text-orange {
-        color: #ff9e53;
-        font-weight: bold;
-      }
-    }
-  }
-
-  .features {
-    margin-top: 20px;
-
-    h3 {
-      font-size: 18px;
-      color: #071c4d;
-      margin-bottom: 0;
-    }
-
-    p {
-      margin-bottom: 0;
-    }
-
-    .description {
-      margin-left: 10px;
-      overflow: hidden;
-      float: left;
-    }
-
-    .features-image {
-      width: 45px;
-      height: 45px;
-      float: left;
-    }
-  }
-
-  .gallery {
-    .xzoom-container {
-      display: block;
-      text-align: center; /* Center the image */
-      margin-bottom: 10px;
-      overflow: hidden; /* Ensure the image stays within the container */
-    }
-
-    .xzoom {
-      max-width: 55%; /* Make the image responsive */
-      height: auto; /* Maintain aspect ratio */
-      box-shadow: none;
-      border-radius: 10px;
-    }
-
-    .xactive {
-      border: 4px solid #1abc9c;
-      box-shadow: none;
-    }
-  }
-
-  .members {
-    .member-image {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  .join-container {
-    margin-top: -16px;
-  }
-}
-
-.card-right {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: 0;
-}
-
-#footer {
-  font-family: "Poppins", sans-serif;
-  background-color: #5bbe82;
-  height: 70vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: start;
-  padding: 50px 300px 50px 300px;
-}
-
-.footer-logo {
-  width: 70%;
-  margin-top: 50px;
-}
-
-.footer-logo img {
-  width: 200px;
-  height: auto;
-}
-
-.footer-contact {
-  padding-top: 50px;
-  padding-left: 0;
-}
-
-.footer-contact h4 {
-  color: #ffffff;
+.card-title {
   font-size: 24px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.footer-contact p {
-  color: #2b344f;
-  font-size: 1rem;
+.card-subtitle {
+  font-size: 18px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5bbe82;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #4aae73;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+/* footer */
+#footer {
+  font-family: "Poppins", sans-serif;
+  padding: 30px 70px 0px;
+  background-color: #5bbe82;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-logo,
+.footer-kontak,
+.footer-menu {
+  font-weight: bold;
+  flex: 1;
 }
 
 .footer-menu {
-  padding-top: 50px;
   padding-left: 150px;
 }
 
-.footer-menu h4 {
-  color: #ffffff;
+.footer-menu h4,
+.footer-kontak h4 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
+.footer-kontak p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2a324c;
+}
+
 .footer-menu li {
+  font-weight: bold;
   list-style: none;
+  margin: 0px 0px 20px;
 }
 
 .footer-menu li > a {
+  font-weight: bold;
   text-decoration: none;
-  color: #2b344f;
+  color: #2a324c;
+}
+
+.footer-logo > p {
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #2a324c;
+}
+
+.footer-copyright {
+  font-weight: bold;
+  padding: 20px 0px 40px;
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  color: #2a324c;
 }
 
 .social-media {
