@@ -23,6 +23,19 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+#project > h2 {
+  font-size: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.underline {
+  width: 80px;
+  height: 5px;
+  background-color: #5bbe82;
+  margin: 20px auto 50px;
+}
+
 header {
   margin: 0 auto;
   display: inline;
