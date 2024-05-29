@@ -144,7 +144,7 @@ nav > .nav-header {
 
 .section-details-header {
   min-height: 310px;
-  background: #E4E6EB;
+  background: #e4e6eb;
   margin-top: -70px;
 }
 
@@ -159,7 +159,7 @@ nav > .nav-header {
 }
 .section-details-content .breadcrumb-item.active {
   font-weight: bold;
-  color: #071C4D;
+  color: #071c4d;
 }
 .section-details-content .card-details {
   padding: 30px;
@@ -174,40 +174,40 @@ nav > .nav-header {
 }
 .section-details-content .card-details p {
   font-size: 18px;
-  color: #B1B1B1;
+  color: black;
 }
 .section-details-content .card-details h3 {
   font-weight: 300;
   font-size: 14px;
-  color: #071C4D;
+  color: #071c4d;
 }
 .section-details-content .card-details .trip-information th {
   font-weight: 400;
   font-size: 18px;
-  color: #071C4D;
+  color: #071c4d;
 }
 .section-details-content .card-details .trip-information td {
   font-weight: 300;
   font-size: 18px;
-  color: #B1B1B1;
+  color: black;
   padding: 5px;
 }
 .section-details-content .card-details .trip-information .text-blue {
-  color: #071C4D;
+  color: #071c4d;
   font-weight: bold;
 }
 .section-details-content .card-details .trip-information .text-orange {
-  color: #FF9E53;
+  color: #5bbe82;
   font-weight: bold;
 }
 .section-details-content .card-details .payment-instructions {
   font-weight: 300;
   font-size: 14px;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 .section-details-content .card-details .bank .bank-item h3 {
   font-size: 18px;
-  color: #071C4D;
+  color: #071c4d;
   margin-bottom: 0;
 }
 .section-details-content .card-details .bank .bank-item p {
@@ -221,7 +221,7 @@ nav > .nav-header {
 .section-details-content .card-details .bank .bank-item .description p {
   font-weight: normal;
   font-size: 16px;
-  color: #071C4D;
+  color: #071c4d;
 }
 .section-details-content .card-details .bank .bank-image {
   width: 45px;
@@ -231,7 +231,7 @@ nav > .nav-header {
 .section-details-content .card-details .disclaimer {
   font-weight: 300;
   font-size: 14px;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 .section-details-content .card-details .gj-datepicker .datepicker {
   border-right: 0;
@@ -240,11 +240,11 @@ nav > .nav-header {
   padding-right: 30px;
 }
 .section-details-content .card-details .btn-add-now {
-  background-color: #071C4D;
-  color: #FFF;
+  background-color: #071c4d;
+  color: #fff;
 }
 .section-details-content .card-details .btn-add-now:hover {
-  background-color: #1B3B86;
+  background-color: #1b3b86;
   color: #fff;
 }
 .section-details-content .card-right {
@@ -258,7 +258,7 @@ nav > .nav-header {
 }
 .section-details-content .features h3 {
   font-size: 18px;
-  color: #071C4D;
+  color: #071c4d;
   margin-bottom: 0;
 }
 .section-details-content .features p {
@@ -291,15 +291,15 @@ nav > .nav-header {
   margin-top: -16px;
 }
 .section-details-content .btn-join-now {
-  background-color: #FF9E53;
-  color: #FFF;
+  background-color: #5bbe82;
+  color: #fff;
   border-radius: 0;
   width: 100%;
   text-align: center;
 }
 .section-details-content .btn-join-now:hover {
-  background-color: #FFB57C;
-  color: #FFF;
+  background-color: #80dba4;
+  color: #fff;
 }
 
 #footer {
